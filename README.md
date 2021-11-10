@@ -30,3 +30,10 @@ Para gerarmos um one-time-password precisamos do tempo Unix atual, período de a
 Utilizamos SHA-1 com atualização em 30s e 6 dígitos que é a configuração mais comum.
 A chave privada deve ser convertida de base32 para um byte array, assim como o tempo Unix (big-endian). 
 Calcula-se o HMAC-SHA1(k, T0/Tx), onde k é a chave privada, T0 o tempo Unix e Tx o intervalo,  truncamos o valor para o número desejado de caracteres e adicionamos um padding de zeros.
+
+# Fotos
+![image](https://user-images.githubusercontent.com/24421245/141181372-fdebfbad-21a5-435f-8fbd-edc13ed3ccec.png)
+*Montagem do circuito na protoboard*
+
+![image](https://user-images.githubusercontent.com/24421245/141181459-6ad50ec4-09f7-40bf-a429-38b5ad1053c0.png)
+*Teste comparando o token com o gerado através do site https://totp.danhersam.com *
